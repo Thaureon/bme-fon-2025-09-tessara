@@ -9,7 +9,7 @@ namespace Assets._Scripts.Camera
         // Update is called once per frame
         void Update()
         {
-            gameObject.transform.position = new Vector3(Target.position.x, Target.position.y, gameObject.transform.position.z);
+            gameObject.transform.position = new Vector3(Target.position.x, Target.position.y + 1, gameObject.transform.position.z);
         }
     }
 }

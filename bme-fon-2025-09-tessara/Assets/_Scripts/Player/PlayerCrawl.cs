@@ -58,14 +58,14 @@ public class PlayerCrawl : MonoBehaviour
 
     private void StartCrawling()
     {
-        AdjustSprite(0.5f, -0.5f);
-        AdjustBodyBox(-0.5f, 1);
+        AdjustSprite(0.5f, 0.5f);
+        AdjustBodyBox(0.5f, 1.0f);
     }
 
     private void StopCrawling()
     {
-        AdjustSprite(1.0f, 0.0f);
-        AdjustBodyBox(0, 2);
+        AdjustSprite(1.0f, 1.0f);
+        AdjustBodyBox(1.0f, 2.0f);
     }
 
     private void AdjustSprite(float height, float position)
