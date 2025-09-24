@@ -19,7 +19,7 @@ public class GenerateWorld : MonoBehaviour
         _spawnEnd.SpawnEndLocation = LevelLayout.GetComponentInChildren<SpawnEndLocation>();
 
         _spawnPlayer.Spawn();
-        _spawnAbility.Spawn();
+        //_spawnAbility.Spawn();
         _spawnEnd.Spawn();
     }
 }

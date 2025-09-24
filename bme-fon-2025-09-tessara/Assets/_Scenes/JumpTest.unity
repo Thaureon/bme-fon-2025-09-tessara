@@ -1344,6 +1344,7 @@ GameObject:
   - component: {fileID: 1204919966}
   - component: {fileID: 1204919965}
   - component: {fileID: 1204919964}
+  - component: {fileID: 1204919968}
   m_Layer: 0
   m_Name: 2DWorld Manager
   m_TagString: Untagged
@@ -1419,6 +1420,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelLayout: {fileID: 2044015112}
+--- !u!114 &1204919968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204919961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 421ddfbdddbfa81499c40e36a5184b83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1428589852
 GameObject:
   m_ObjectHideFlags: 0
