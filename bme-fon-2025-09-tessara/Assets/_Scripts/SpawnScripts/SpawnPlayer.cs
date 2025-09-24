@@ -24,8 +24,6 @@ public class SpawnPlayer : MonoBehaviour
     {
         var prefab = Resources.Load<GameObject>(_prefabName);
 
-        Debug.Log(prefab);
-
         _player = Instantiate(prefab, SpawnPlayerLocation.transform.position, Quaternion.identity);
     }
 
