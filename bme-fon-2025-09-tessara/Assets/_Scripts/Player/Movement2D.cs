@@ -12,13 +12,13 @@ namespace Assets._Scripts.Player
         public float Acceleration = 0.2f;
         public float MovingSpeed = 0;
 
-        private Rigidbody2D rb;
+        private Rigidbody2D _rb;
         private InputAction _moveAction;
 
         // Start is called before the first frame update
         void Start()
         {
-            rb = GetComponent<Rigidbody2D>();
+            _rb = GetComponent<Rigidbody2D>();
             _moveAction = InputSystem.actions.FindAction("Move");
 
         }
@@ -29,7 +29,7 @@ namespace Assets._Scripts.Player
             var movement = _moveAction.ReadValue<Vector2>();
             var direction = movement.x;
 
-            rb.position += new Vector2(Speed * direction, 0) * Time.deltaTime;
+            _rb.position += new Vector2(Speed * direction, 0) * Time.deltaTime;
         }
     }
 }

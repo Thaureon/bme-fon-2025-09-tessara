@@ -1,8 +1,11 @@
+using Assets._Scripts.Player.Abilities;
+
 using UnityEngine;
 
 public class SpawnAbility : MonoBehaviour
 {
     public SpawnAbilityLocation SpawnAbilityLocation;
+    public Ability DesiredAbility;
 
     private string _prefabName = "Ability";
 
@@ -15,6 +18,8 @@ public class SpawnAbility : MonoBehaviour
     {
         var prefab = Resources.Load<GameObject>(_prefabName);
 
-        Instantiate(prefab, SpawnAbilityLocation.transform.position, Quaternion.identity);
+        var newAbility = Instantiate(prefab, SpawnAbilityLocation.transform.position, Quaternion.identity);
+
+        newAbility.GetComponentInChildren<ActivateAbility>().AbilityName = DesiredAbility;
     }
 }

@@ -18,10 +18,10 @@ EditorBuildSettings:
     path: Assets/_Scenes/Menus/VictoryMenu.unity
     guid: 93f3b24681141684b91e4cf150694322
   - enabled: 1
-    path: Assets/_Scenes/2DWorld.unity
+    path: Assets/_Scenes/TestLevels/2DWorld.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/_Scenes/JumpTest.unity
+    path: Assets/_Scenes/TestLevels/JumpTest.unity
     guid: 4f0b2e72d12cc9c429dfa7194660bf41
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

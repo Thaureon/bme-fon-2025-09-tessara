@@ -217,10 +217,11 @@ GameObject:
   - component: {fileID: 1250243405519879656}
   - component: {fileID: 8295010349591852599}
   - component: {fileID: 1158825631055470610}
-  - component: {fileID: 1365373997842381261}
-  - component: {fileID: 693032108579617110}
   - component: {fileID: 7883214279644331182}
+  - component: {fileID: 693032108579617110}
   - component: {fileID: 6610789617668486060}
+  - component: {fileID: 6146582688778228331}
+  - component: {fileID: 1365373997842381261}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -318,7 +319,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1365373997842381261
+--- !u!114 &7883214279644331182
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -327,11 +328,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5408154479671967420}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 665118f6ef721e943836917d8bbbe2c9, type: 3}
+  m_Script: {fileID: 11500000, guid: a0013e5c645d768468d8f65669faeaeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StuckCrawling: 0
-  SpritePosition: {fileID: 2837776112756700236}
+  HeadBlocked: 0
+  JumpForce: 30
 --- !u!114 &693032108579617110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -348,19 +349,6 @@ MonoBehaviour:
   CurrentSpeed: 0
   Acceleration: 0.2
   MovingSpeed: 0
---- !u!114 &7883214279644331182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5408154479671967420}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0013e5c645d768468d8f65669faeaeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HeadBlocked: 0
 --- !u!114 &6610789617668486060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -373,3 +361,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0865a9f4cca0f654498bbb16e19cf8df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6146582688778228331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5408154479671967420}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95ce8665aa784ae4e9fdc9a8d85d71d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Jumping: 0
+--- !u!114 &1365373997842381261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5408154479671967420}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 665118f6ef721e943836917d8bbbe2c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StuckCrawling: 0
+  SpritePosition: {fileID: 2837776112756700236}
